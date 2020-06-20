@@ -8,6 +8,10 @@ The container will run and exit inmediatly. This is because docker containers ar
 
 **Containers only live as long as the processes live**
 
+## **docker run -it**
+
+Runs a container on interactive mode. The container does not stop inmediatly.
+
 ## **docker run -d**
 
 Runs a container on detached mode, runs in the background and you will be reprompted inmediatly.
