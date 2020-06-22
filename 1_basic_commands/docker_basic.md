@@ -87,3 +87,5 @@ Rename an existing container.
 ## **docker logs**
 
 Shows container's output even if is Exited (has been stopped). stdout.
+
+## **docker history**
