@@ -6,11 +6,23 @@ Start a container from an image. It will run an instance of the image if already
 
 The container will run and exit inmediatly. This is because docker containers are meant not to host an OS, but to run specific tasks or processes, so, once task is completed, containers exit.
 
+To give a container a name, use `docker run --name container_name image_name`
+
+To run a specific version use a tag `docker run container:tag`, _latest, for example.
+
 **Containers only live as long as the processes live**
 
 ## **docker run -it**
 
 Runs a container on interactive mode. The container does not stop inmediatly.
+
+## **docker run -p**
+
+Maps a container port to a local port. Use a local_port:container_port syntax.
+
+## **docker run -v**
+
+Maps a directory of the container to a local directory. In other words, mount a external volume to a folder inside docker container. Useful to persist data on external volume. Use a local_directory:container_directory syntax.
 
 ## **docker run -d**
 
@@ -26,7 +38,11 @@ Shows all running containers and basic info about them (e.g. name of image, id, 
 
 ## **docker ps -a**
 
-Shows all containers (running or not).
+List all containers (running or not).
+
+## **docker ps -aq**
+
+List all containers IDS (useful for removing all and not one by one).
 
 ## **docker stop**
 
@@ -42,9 +58,9 @@ List available images and sizes.
 
 ## **docker rmi**
 
-Remove docker image from host system.
+Remove docker image from host system. Same funcionality for removing multiple images as with rm command with containers.
 
-**IMPORTANT:** Before remove any image, ensure if any dependent containers are running first. You must stop and delete all dependant containers.
+**IMPORTANT:** Before remove any image, ensure if any dependent containers are running/or not first (use docker ps -a). You must stop and delete all dependant containers.
 
 ## **docker pull**
 
@@ -57,3 +73,11 @@ You can append a command to run once container start.
 ## **docker exec**
 
 Execute a command on a running container.
+
+## **docker rename**
+
+Rename an existing container.
+
+## **docker logs**
+
+Shows container's output even if is Exited (has been stopped). stdout.
