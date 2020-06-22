@@ -10,6 +10,8 @@ To give a container a name, use `docker run --name container_name image_name`
 
 To run a specific version use a tag `docker run container:tag`, _latest, for example.
 
+Every container has a root command (displayed on COMMAND column). When this task is finished, the container will end.
+
 **Containers only live as long as the processes live**
 
 ## **docker run -it**
@@ -51,6 +53,10 @@ Stops a container. It's necesary to pass the docker container name or id.
 ## **docker rm**
 
 Remove a docker container permanently from host. Can remove multiple containers specifying the names on sequence. Just few characters of CONTAINER_ID are necessary.
+
+## **docker rm -f**
+
+Remove docker containers even if these are running.
 
 ## **docker images**
 
