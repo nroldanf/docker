@@ -34,7 +34,7 @@ Stops a container. It's necesary to pass the docker container name or id.
 
 ## **docker rm**
 
-Remove a docker container permanently from host.
+Remove a docker container permanently from host. Can remove multiple containers specifying the names on sequence. Just few characters of CONTAINER_ID are necessary.
 
 ## **docker images**
 
