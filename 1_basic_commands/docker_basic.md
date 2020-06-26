@@ -18,6 +18,14 @@ Every container has a root command (displayed on COMMAND column). When this task
 
 Runs a container on interactive mode. The container does not stop inmediatly.
 
+## **docker run --rm**
+
+When exited the container, removed from system.
+
+## **docker run --entrypoint**
+
+Specifies entrypoint of the container.
+
 ## **docker run -p**
 
 Maps a container port to a local port. Use a local_port:container_port syntax.
@@ -29,6 +37,10 @@ Maps a directory of the container to a local directory. In other words, mount a 
 ## **docker run -d**
 
 Runs a container on detached mode, runs in the background and you will be reprompted inmediatly.
+
+## **docker run -e**
+
+Sets enviroment variables within the container.
 
 ## **docker attach**
 
@@ -58,7 +70,7 @@ Remove a docker container permanently from host. Can remove multiple containers 
 
 Remove docker containers even if these are running.
 
-## **docker images**
+## **docker images/ docker image ls**
 
 List available images and sizes.
 
@@ -87,5 +99,3 @@ Rename an existing container.
 ## **docker logs**
 
 Shows container's output even if is Exited (has been stopped). stdout.
-
-## **docker history**
