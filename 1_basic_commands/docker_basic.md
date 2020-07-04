@@ -42,6 +42,10 @@ Runs a container on detached mode, runs in the background and you will be reprom
 
 Sets enviroment variables within the container.
 
+## **docker run --link**
+
+Stablish connection between docker containers. DEPRECATED, use docker-compose networks instead.
+
 ## **docker attach**
 
 Change to attach mode a container.

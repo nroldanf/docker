@@ -1,0 +1,40 @@
+# Llave valor
+fruit: Apple
+vegetable: Carrot
+Liquid: Water
+Meat: Chicken
+
+# Array
+Fruits:
+    -   Orange
+    -   Apple
+    -   Banana
+Vegetables:
+    -   Carrot
+    -   Cauliflower
+    -   Tomato
+
+# Dictionary Map
+Banana:
+    Calories: 105
+    Fat: 0.4 g
+    Carbs: 27 g
+Grapes:
+    Calories: 62
+    Fat: 0.3 g
+    Carbs: 16 g
+
+Animals:
+    Dog:
+        Weight: 5 kg
+    Cat:
+        Weight: 4 kg
+
+# Advanced
+Fruits:
+    -   Banana:
+            Calories: 105
+            Fat: 0.4 g
+    -   Grape:
+            Calories: 90
+            Fat: 0.3 g
