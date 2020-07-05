@@ -71,3 +71,35 @@ Load Balancing: Application Load Balancing (ALB) and Network Load Balancing (NLB
 - Amazon ECS: Designed to be able to integrate with other AWS services.
 - Amazon EKS Elastic Container Services for Kubernetes. Easy to use Kubernetes on AWS Cloud
 - Amazon ECR: Fully managed Docker Container Registry to store, manage and deploy Docker container images (just like Docker Hub). Integrated with ECS and EKS.
+
+## ECR Create a registry
+
+Login
+
+```Shell
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin image
+```
+
+Create a repository
+
+```Shell
+aws ecr create-repository \
+    --repository-name name \
+    --image-scanning-configuration scanOnPush=true \
+    --region us-east-1
+```
+
+Push. First create a tag with the repository URI locally.
+
+```Shell
+docker tag name image-name repositoryURI
+docker push aws_account_id.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest
+```
+
+## Delete an image
+
+```Shell
+aws ecr batch-delete-image \
+    --repository-name image-name
+    --image-ids imageTag=tagName
+```
