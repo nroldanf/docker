@@ -47,6 +47,10 @@ Builds the image from a Dockerfile. It takes the path (e.g. ".", which is the po
 
 Specifies a docker file other than the default "Dockerfile".
 
+## **docker commit**
+
+It can be useful to commit new changes and configurations into a new image.
+
 ## **docker login**
 
 Login with Docker ID to push and pull images from Docker Hub. First, is mandatory to create an account on DockerHub.
