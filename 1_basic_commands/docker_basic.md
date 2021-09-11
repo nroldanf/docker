@@ -103,3 +103,12 @@ Rename an existing container.
 ## **docker logs**
 
 Shows container's output even if is Exited (has been stopped). stdout.
+
+## **docker system prune**
+
+Remove all dangling images, stopped containers, networks not used by at least one container and dangling build cache.
+
+## **docker system df**
+
+Shows total space used by docker resources (images, containers, volumes, build cache)
+
