@@ -64,7 +64,7 @@ List all containers IDS (useful for removing all and not one by one).
 
 ## **docker stop**
 
-Stops a container. It's necesary to pass the docker container name or id.
+Stops a running container through SIGTERM. It's necesary to pass the docker container name or id.
 
 ## **docker rm**
 
@@ -103,6 +103,10 @@ Rename an existing container.
 ## **docker logs**
 
 Shows container's output even if is Exited (has been stopped). stdout.
+
+## **docker kill**
+
+Stop a running container through SIGKILL.
 
 ## **docker system prune**
 
