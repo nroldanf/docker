@@ -4,6 +4,10 @@
 
 Specifies base image. If scratch is the value, the only thing available in the image is the linux kernel.
 
+## **ARG**
+
+Pass an argument into a docker building process.
+
 ## **ENV**
 
 Defines enviroment variables.
